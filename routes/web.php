@@ -13,8 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
 Route::get('/', function () {
+    return view('links');
+});
+
+Route::get('/start', function () {
     return view('start');
 });
 
@@ -25,4 +28,6 @@ Route::get('/hello', function () {
 Route::get('/blog', function () {
     return view('blog');
 });
+
+
 
